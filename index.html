@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Your Text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="./assets/convertyourtextLogo.png"
+            alt="Logo convertyourtext"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="announcementMobile"></div>
+        <section class="boxHeader">
+          <h2>Write a text and convert NOW!!</h2>
+
+          <button id="copyBox" class="copyBox">
+            <span>Copy the text</span>
+            <img
+              src="./assets/carbon_copy.svg"
+              alt="Copy Icon convertyourtext"
+            />
+          </button>
+        </section>
+
+        <form>
+          <textarea
+            name="textForConvert"
+            id="textForConvert"
+            placeholder="Write Your AWESOME Text"
+          ></textarea>
+        </form>
+
+        <section class="buttonFunctions">
+          <button onclick="lowerCase()">lower case</button>
+          <button onclick="upperCase()">UPPER CASE</button>
+          <button onclick="capitalizedCase()">Capitalized Case</button>
+        </section>
+
+        <div class="announcementDesktop"></div>
+      </div>
+    </main>
+
+    <footer>
+      Hildebrando Viana Matos - 2021
+    </footer>
+
+    <script src="./script/scripts.js"></script>
+  </body>
+</html>

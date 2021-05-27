@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --background: #f2f2f1;
+  --mainText: #121214;
+  --lightText: #636e72;
+  --lightTextTwo: #828282;
+  --announcement: #f2c94c;
+}
+
+body {
+  background: var(--background);
+}
+
+.container {
+  width: min(90vw, 900px);
+  margin: 3rem auto;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 2.3rem;
+}
+
+header .logo {
+  width: 100%;
+  max-width: 320px;
+}
+
+header .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.announcementMobile,
+.announcementDesktop {
+  width: 100%;
+  background: var(--announcement);
+  margin: 2rem 0;
+}
+
+.announcementMobile {
+  display: none;
+  height: 80px;
+}
+
+.announcementDesktop {
+  height: 120px;
+  display: block;
+}
+
+.boxHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxHeader h2 {
+  font-weight: 500;
+  font-size: 1.57rem;
+  color: var(--mainText);
+}
+
+.boxHeader .copyBox {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--lightText);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 300;
+  width: 150px;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  height: 375px;
+  resize: vertical;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.125rem;
+}
+
+.buttonFunctions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.buttonFunctions button {
+  width: calc(100% / 3);
+  margin-right: 10px;
+  height: 50px;
+  border: none;
+  background: var(--mainText);
+  color: #f2f2f1;
+  border-radius: 2px;
+  line-height: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 0.2rem;
+  transition: 200ms filter;
+}
+
+.buttonFunctions button:hover {
+  filter: brightness(0.8);
+}
+
+.buttonFunctions button:last-child {
+  margin-right: 0px;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--lightTextTwo);
+  font-weight: 300;
+}
+
+@media (max-width: 700px) {
+  .announcementMobile {
+    display: block;
+  }
+
+  .announcementDesktop {
+    display: none;
+  }
+
+  .buttonFunctions {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .buttonFunctions button {
+    width: 100%;
+    margin: 0.5rem 0;
+    margin-right: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .copyBox span {
+    display: none;
+  }
+}
