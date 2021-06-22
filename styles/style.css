@@ -150,6 +150,52 @@ footer {
   font-weight: 300;
 }
 
+.description {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  background: #ffffff;
+}
+
+.description .container {
+  width: min(90vw, 600px);
+}
+
+.description h1 {
+  font-size: 3rem;
+  color: var(--lightText);
+  margin-bottom: 1rem;
+}
+
+.description h2 {
+  font-size: 2rem;
+  color: var(--lightTextTwo);
+}
+
+.description h3 {
+  font-size: 3rem;
+  color: var(--mainText);
+  margin: 1rem 0;
+}
+
+.description h3.lowercase {
+  text-transform: lowercase;
+}
+
+.description h3.uppercase {
+  text-transform: uppercase;
+}
+
+.description h3.capitalizedCase {
+  text-transform: capitalize;
+}
+
+.description p {
+  font-size: 1rem;
+  color: var(--mainText);
+  margin: 2rem 0;
+}
+
 @media (max-width: 700px) {
   .announcementMobile {
     display: block;
