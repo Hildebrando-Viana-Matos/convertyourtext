@@ -172,21 +172,21 @@ footer {
   color: var(--lightTextTwo);
 }
 
-.description h3 {
-  font-size: 3rem;
-  color: var(--mainText);
+.description p {
+  font-size: 1rem;
+  color: var(--lightText);
   margin: 1rem 0;
 }
 
-.description h3.lowercase {
+.description p.lowercase {
   text-transform: lowercase;
 }
 
-.description h3.uppercase {
+.description p.uppercase {
   text-transform: uppercase;
 }
 
-.description h3.capitalizedCase {
+.description p.capitalizedCase {
   text-transform: capitalize;
 }
 
